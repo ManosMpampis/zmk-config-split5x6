@@ -3,7 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#define MAC 0
+#define WINDOWS_DEFAULT 0
 #define WINDOWS 1
 #define GAME 2
 #define CODE 3
@@ -85,25 +85,48 @@
     keymap {
         compatible = "zmk,keymap";
 
-        mac_default_layer {
-            display-name = "Mac";
+        windows_default_layer {
+            display-name = "Windows_Default";
             bindings = <
-                &mo FUNCTION  &mo MAC       &mo WINDOWS &mo GAME  &mo CODE &mo NUMBER     &kp N6       &kp N7           &kp N8    &kp N9  &kp N0    &kp MINUS
-                &bt BT_SEL 0 &bt BT_SEL 1   &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &kp G          &kp J        &kp L            &kp U     &kp Y   &kp BSPC       &kp BSPC
-                &studio_unlock &bt BT_CLR   &bootloader       &kp S     &kp T    &kp D          &kp H        &kp N            &kp E     &kp I   &kp O          &kp ENTER
-                &out OUT_USB     &out OUT_BLE   &out OUT_TOG       &kp C     &kp V    &kp B          &kp K        &kp M            &kp COMMA &kp DOT &bm RSHFT FSLH &kp RSHFT
-                &td_multi_mac &td_multi_mac &none       &kp LCTRL &kp LALT &sm LGUI SPACE &lt CODE TAB &lt NUMBER ENTER &none     &none   &none          &none
+            // ---------------------------------------------------------------------------------------------------------------------
+            // | ` - ESC |   1    |    2   |    3    |    4    |  5   | || |    6    |   7    |    8    |   9    |   0    |    -    |
+            // |  TAB    |   Q    |    W   |    E    |    R    |  T   | || |    Y    |   U    |    I    |   O    |   P    |    =    |
+            // |  CAPS   |   A    |    S   |    D    |    F    |  G   | || |    H    |   J    |    K    |   L    |   ;    |    '    |
+            // |  SHIFT  |   Z    |    X   |    C    |    V    |  B   | || |    N    |   M    |    ,    |   .    |   /    |    \    |
+            // |  CTRL   |  GUI   |   ALT  |  SPACE  |  SPACE  | FUN  | || |   FUN   |  FUN   |   "["   |  "]"   |  BSPC  | DELETE  |
+                &kp GRAVE &kp N1   &kp N2   &kp N3    &kp N4    &kp N5      &kp N6    &kp N7   &kp N8    &kp N9   &kp N0   &kp MINUS 
+                &kp TAB   &kp Q    &kp W    &kp E     &kp R     &kp T       &kp Y     &kp U    &kp I     &kp O    &kp P    &kp EQUAL
+                &kp CAPS  &kp A    &kp S    &kp D     &kp F     &kp G       &kp H     &kp J    &kp K     &kp L    &kp SEMI &kp SQT
+                &kp LSHFT &kp Z    &kp X    &kp C     &kp V     &kp B       &kp N     &kp M    &kp COMMA &kp DOT  &kp FSLH &kp BSLH
+                &kp LCTRL &kp LGUI &kp LALT &kp CAPS  &kp SPACE &mo WINDOWS &mo GAME  &mo CODE &kp LBKT  &kp RBKT &kp BSPC &kp DEL
+            >;
+        };
+
+        windows_main {
+            display-name = "Windows_Default";
+            bindings = <
+            // ------------------------------------------------------------------------------------------------------------
+            // |  ` - ESC |   1   |    2   |    3    |    4    |  5   | || |    6    |   7    |    8     |   9   |    0    |   `   |
+            // |    TAB   |   Q   |    W   |    E    |    R    |  T   | || |    Y    |   U    |    I     |   O   |    P    |   -   |
+            // |          |   A   |    S   |    D    |    F    |  G   | || |    H    |   J    |    K     |   L   |    ;    |   '   |
+            // |   SHIFT  |   Z   |    X   |    C    |    V    |  B   | || |    N    |   M    |    ,     |   .   |    /    | SHIFT |
+            // |   CTRL   |  GUI  |   ALT  |  CAPS   |  SPACE  | FUN  | || |   BSPC  |  GUI   |   "["    |  "]"  |   "["   |  "]"  |
+                &kp GRAVE &kp N1   &kp N2   &kp N3    &kp N4    &kp N5      &kp N6    &kp N7   &kp N8     &kp N9  &kp N0    &mo Windows 
+                &kp TAB   &kp Q    &kp W    &kp E     &kp R     &kp T       &kp Y     &kp U    &kp I      &kp O   &kp P     &kp 
+                &kp CAPS  &kp A    &kp S    &kp D     &kp F     &kp G       &kp H     &kp J    &kp K      &kp L   &kp SEMI  &kp SINGLE_QUOTE
+                &kp LSHFT &kp Z    &kp X    &kp C     &kp V     &kp B       &kp N     &kp M    &kp COMMA  &kp DOT &kp FSLH  &kp BSLH
+                &kp LCTRL &kp LGUI &kp LALT &kp CAPS  &kp SPACE &kp mo1     &kp ENTER &kp BSPC &kp DELETE &kp     &kp MINUS &kp EQUAL
             >;
         };
 
         windows_default_layer {
             display-name = "Windows";
             bindings = <
-                &mo FUNCTION  &mo MAC       &mo WINDOWS &mo GAME  &mo CODE &mo NUMBER     &kp N6       &kp N7           &kp N8    &kp N9  &kp N0    &kp MINUS
-                &bt BT_SEL 0 &bt BT_SEL 1   &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &kp G          &kp J        &kp L            &kp U     &kp Y   &kp BSPC       &kp BSPC
-                &studio_unlock &bt BT_CLR   &bootloader       &kp S     &kp T    &kp D          &kp H        &kp N            &kp E     &kp I   &kp O          &kp ENTER
-                &kp LSHFT         &bm LSHFT Z       &kp X &kp C     &kp V    &kp B           &kp K        &kp M            &kp COMMA &kp DOT &bm RSHFT FSLH &kp RSHFT
-                &td_multi_windows &td_multi_windows &kp N1 &kp LCTRL &kp LALT &sm LCTRL SPACE &lt CODE TAB &lt NUMBER ENTER &kp N1     &kp N1   &kp N1          &kp N1
+                &kp       &kp N1 &kp &kp &kp &kp &kp &kp &kp &kp &kp &kp 
+                &kp       &kp Q  &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P     &kp
+                &kp       &kp A  &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L           &kp &kp
+                &kp &kp Z &kp X  &kp C &kp V &kp B &kp N &kp M &kp &kp &kp &kp
+                &kp LCTRL &kp &td_multi_windows &kp &kp &kp &kp &kp &kp &kp &kp &kp &kp
             >;
         };
 
