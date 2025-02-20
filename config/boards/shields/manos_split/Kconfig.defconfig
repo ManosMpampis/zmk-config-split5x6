@@ -13,4 +13,10 @@ if SHIELD_MANOS_SPLIT_LEFT || SHIELD_MANOS_SPLIT_RIGHT
 config ZMK_SPLIT
     default y
 
+config ZMK_PM_SOFT_OFF
+    default y
+
+config ZMK_POINTING
+    default y
+    
 endif
