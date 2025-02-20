@@ -18,5 +18,4 @@ config ZMK_PM_SOFT_OFF
 
 config ZMK_POINTING
     default y
-    
 endif
