@@ -54,31 +54,31 @@
         cut: cut {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp x, <&macro_release &kp LCTRL>; 
+            bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp x>, <&macro_release &kp LCTRL>; 
         };
 
         copy: copy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp c, <&macro_release &kp LCTRL>; 
+            bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp c>, <&macro_release &kp LCTRL>; 
         };
 
         paste: paste {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp v, <&macro_release &kp LCTRL>; 
+            bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp v>, <&macro_release &kp LCTRL>; 
         };
 
         undo: undo {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp z, <&macro_release &kp LCTRL>; 
+            bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp z>, <&macro_release &kp LCTRL>; 
         };
 
         redo: redo {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp y, <&macro_release &kp LCTRL>; 
+            bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp y>, <&macro_release &kp LCTRL>; 
         };
     };
 
