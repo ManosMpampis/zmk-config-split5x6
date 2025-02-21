@@ -179,8 +179,8 @@
             // -------------------------------------------------------------------------------------------------------------------------------------------------------
             // |   1      |    2   |    3    |    4          |  5      |    `        | || |   -          |      6         |   7         |    8    |   9     |   0    |
             // |   Q      |    W   |    E    |    R          |  T      |   GUI       | || |   + - =      |      Y         |   U         |    I    |   O     |   P    |
-            // |   A      |    S   |    D    |    F          |  G      |   ESC       | || |    '         |      H         |   J         |    K    |   L     |   ;    | 
-            // |   Z      |    X   |    C    |    V          |  B      |  NUMBER     | || |   NUMBER     |      N         |   M         |    ,    |   .     | ? - |  |                                  
+            // |   A      |    S   |    D    |    F          |  G      |   ESC       | || |    '         |      H         |   J         |    K    |   L     |   ;    |
+            // |   Z      |    X   |    C    |    V          |  B      |  NUMBER     | || |   NUMBER     |      N         |   M         |    ,    |   .     | ? - |  |
             // |  CTRL    |  TAB   |   ALT   |  SHIFT - CAPS | SPACE   |   FUN       | || |   FUN        |     NAV        |  BSPC-DEL   |   "["   |  "]"    |  / - \ |
                 &kp N1    &kp N2   &kp N3    &kp N4          &kp N5    &kp GRAVE           &kp MINUS     &kp N6           &kp N7        &kp N8    &kp N9    &kp N0   
                 &kp Q     &kp W    &kp E     &kp R           &kp T     &kp LGUI            &pluseq       &kp Y            &kp U         &kp I     &kp O     &kp P    
@@ -211,9 +211,9 @@
             display-name = "Number";
             bindings = < 
             // -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-            // |  ESC     |  TAB  |    /   |  *         |     -   |  Mod-Fun-Swap       | || |  Mod-Fun-Swap        |      |       |  TAB   |      /     |     *      |   -    |    
+            // |  ESC     |  TAB  |    /   |  *         |     -   |  Mod-Fun-Swap       | || |  Mod-Fun-Swap        |      |       |  TAB   |      /     |     *      |   -    |
             // |   ◀      |   7   |    8   |  9         |     +   |    ^                | || |     L Bracket        |   R Bracket  |  &     |     *      |  Left P    |Right P |
-            // |    ▶     |   4   |    5   |  6         |    +    |    %                | || |     ;                |     '        |  $     |      %     |     ^      |   +    |   
+            // |    ▶     |   4   |    5   |  6         |    +    |    %                | || |     ;                |     '        |  $     |      %     |     ^      |   +    |
             // |    ▲     |  1    |    2   |  3         |  ENTER  |    Left Parenthesis | || |  Left Brace          |      `       |     !  |     @      |     #      |    \   |
             // |    ▼     |  0    |    0   |  .         |  SHIFT  |    Right Parenthesis| || |  Right Brace         | SHIFT        | ToNav  |     ,      |     .      |    /   |
                 &kp ESC   &kp TAB &kp FSLH &kp ASTERISK &kp MINUS &tdl3 NUMMOD FUN NUMSW     &tdl3 NUMMOD FUN NUMSW &kp PIPE       &kp TAB  &kp FSLH     &kp ASTERISK &kp MINUS
@@ -228,9 +228,9 @@
             display-name = "NumberMod";
             bindings = < 
             // ----------------------------------------------------------------------------------------------------------------------------------------------------
-            // |  ESC     |  TAB  |    /   |  *         |     -   |  Mod-Fun-Swap | || |  Mod-Fun-Swap  |      |       |  TAB   |      /     |     *      |   -    |    
+            // |  ESC     |  TAB  |    /   |  *         |     -   |  Mod-Fun-Swap | || |  Mod-Fun-Swap  |      |       |  TAB   |      /     |     *      |   -    |
             // |   ◀     |   7    |    8   |  9         |     +   |    GUI        | || |     [          |     ]        |  &     |     *      |     (      |   )    |
-            // |    ▶    |   4    |    5   |  6         |    +    |    SHIFT      | || |     ;          |     '        |  $     |      %     |     ^      |   +    |   
+            // |    ▶    |   4    |    5   |  6         |    +    |    SHIFT      | || |     ;          |     '        |  $     |      %     |     ^      |   +    |
             // |    ▲     |  1    |    2   |  3         |  ENTER  |    ALT        | || |     {          |      `       |     !  |     @      |     #      |    \   |
             // |    ▼     |  0    |    0   |  .         |  SHIFT  |    CTRL       | || |     }          | SHIFT        | ToNav  |     ,      |     .      |    /   |
                 &kp ESC   &kp TAB &kp FSLH &kp ASTERISK &kp MINUS &none                 &none           &kp PIPE       &kp TAB  &kp FSLH     &kp ASTERISK &kp MINUS
@@ -262,8 +262,8 @@
         number_layer_mods {
             display-name = "NumberModSWAP";
             bindings = < 
-            //  -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-            //  |  Mod-Fun-Swap |      |       |  TAB   |      /     |     *      |   -    |  ||  |  ESC     |  TAB  |    /   |  *         |     -   |  Mod-Fun-Swap       | 
+            //  ------------------------------------------------------------------------------------------------------------------------------------------------------------
+            //  |  Mod-Fun-Swap |      |       |  TAB   |      /     |     *      |   -    |  ||  |  ESC     |  TAB  |    /   |  *         |     -   |  Mod-Fun-Swap       |
             //  |     [         |     ]        |  &     |     *      |     (      |   )    |  ||  |   ◀     |   7    |    8   |  9         |     +   |    GUI              |
             //  |     ;         |     '        |  $     |      %     |     ^      |   +    |  ||  |    ▶    |   4    |    5   |  6         |    +    |    SHIFT            |
             //  |     {         |      `       |     !  |     @      |     #      |    \   |  ||  |    ▲     |  1    |    2   |  3         |  ENTER  |    ALT              |
@@ -280,9 +280,9 @@
             display-name = "Navigation";
             bindings =<
             // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-            // |  NaN      |     NaN    |      NaN   |  NaN       |    NaN     |  Mod-Fun-Swap       | || |  Mod-Fun-Swap        |    PASTE   |     Home    |      ▲       |    END         |   Redo   |    
+            // |  NaN      |     NaN    |      NaN   |  NaN       |    NaN     |  Mod-Fun-Swap       | || |  Mod-Fun-Swap        |    PASTE   |     Home    |      ▲       |    END         |   Redo   |
             // |  GUI      |     NaN    |      NaN   |  NaN       |    NaN     |    NaN              | || |     CUT              |    COPY    |     ◀       |     ▼        |    ▶          |   Undo   |
-            // |  SHIFT    |     NaN    |      NaN   |  NaN       |    NaN     |    NaN              | || | TAB                  | Backspace  |  Page Up    |      ▲ M     | Page Down      |   Insert |   
+            // |  SHIFT    |     NaN    |      NaN   |  NaN       |    NaN     |    NaN              | || | TAB                  | Backspace  |  Page Up    |      ▲ M     | Page Down      |   Insert |
             // |  ALT      |     NaN    |      NaN   |  NaN       |    NaN     |    NaN              | || |Midle Click           | Left Click |     ◀ M     |     ▼ M      |    ▶ M        |   ▲ W    |
             // |  CTRL     |     NaN    |      NaN   |  NaN       |    NaN     |    NaN              | || |Right Click           | Close      |     DEL     |     ◀ W      |  ▶ W          |    ▼ W   |
                 &trans     &trans       &trans       &trans       &trans       &tdl3 NAVMOD FUN NAVSW     &tdl3 NAVMOD FUN NAVSW &paste       &kp HOME       &kp UP         &kp END         &redo         
@@ -297,10 +297,10 @@
             display-name = "NavigationMod";
             bindings =<
             // --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-            // |  NaN      |     NaN    |      NaN   |  NaN       |    NaN     |  Mod-Fun-Swap       | || |  Mod-Fun-Swap         |    PASTE   |     Home    |      ▲       |    END        |   Redo    |        
+            // |  NaN      |     NaN    |      NaN   |  NaN       |    NaN     |  Mod-Fun-Swap       | || |  Mod-Fun-Swap         |    PASTE   |     Home    |      ▲       |    END        |   Redo    |
             // |  NaN      |     NaN    |      NaN   |  NaN       |    NaN     |    NaN              | || |     GUI               |    COPY    |     ◀       |     ▼        |    ▶         |   Undo    |
-            // |  Gui      |     ALT    |      CTRL  |  SHIFT     |    NaN     |    NaN              | || | SHIFT                 | Backspace  |  Page Up    |      ▲ M     | Page Down     |   Insert  |      
-            // |  NaN      |     NaN    |      NaN   |  NaN       |    NaN     |    NaN              | || |       ALT             | Left Click |     ◀ M     |     ▼ M      |    ▶ M       |   ▲ W  |
+            // |  Gui      |     ALT    |      CTRL  |  SHIFT     |    NaN     |    NaN              | || | SHIFT                 | Backspace  |  Page Up    |      ▲ M     | Page Down     |   Insert  |
+            // |  NaN      |     NaN    |      NaN   |  NaN       |    NaN     |    NaN              | || |       ALT             | Left Click |     ◀ M     |     ▼ M      |    ▶ M       |     ▲ W   |
             // |  NaN      |     NaN    |      NaN   |  NaN       |    NaN     |    NaN              | || |       CTRL            | Close      |     DEL     |     ◀ W      |  ▶ W          |    ▼ W   |
                 &trans     &trans       &trans       &trans       &trans       &none                       &none                  &trans       &trans        &trans      &trans       &trans
                 &trans     &trans       &trans       &trans       &trans       &trans                      &kp LGUI               &trans       &trans        &trans      &trans       &trans
