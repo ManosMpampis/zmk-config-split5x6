@@ -144,7 +144,7 @@
             #binding-cells = <0>;
             bindings = <&kp FSLH>, <&kp BSLH>;
             mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
-        }
+        };
 
         questline: questionmark_pipe {
             compatible = "zmk,behavior-mod-morph";
@@ -152,14 +152,14 @@
             bindings = <&kp FSLH>, <&kp BSLH>;
             mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
             keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>; 
-        }
+        };
 
         bspacedel: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp BSPC>, <&kp DEL>;
             mods = <(MOD_LGUI|MOD_LCTL|MOD_LALT|MOD_RGUI|MOD_RCTL|MOD_RALT)>;
-        }
+        };
 
         pluseq: pluse_equal {
             compatible = "zmk,behavior-mod-morph";
@@ -167,7 +167,7 @@
             bindings = <&kp PLUS>, <&kp EQUAL>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_LSFT|MOD_RSFT)>;
-        }
+        };
     };
     
     keymap {
