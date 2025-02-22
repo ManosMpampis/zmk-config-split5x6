@@ -11,12 +11,18 @@
 
 #include <dt-bindings/zmk/pointing.h>
 
-#define WINDOWS_DEFAULT 0
-#define WINDOWS 1
-#define GAME 2
-#define CODE 3
-#define NUMBER 4
-#define FUNCTION 5
+#define WINDOWS 0
+#define GAME 1
+#define NUM 2
+#define NUMMOD 3
+#define NUMSW 4
+#define NUMMODSW 5
+#define NAV 6
+#define NAVMOD 7
+#define NAVSW 8
+#define NAVMODSW 9
+#define MED 10
+#define FUN 11
 
 // Behavior Overrides
 &lt {
@@ -185,7 +191,7 @@
                 &kp N1    &kp N2   &kp N3    &kp N4          &kp N5    &kp GRAVE           &kp MINUS     &kp N6           &kp N7        &kp N8    &kp N9    &kp N0   
                 &kp Q     &kp W    &kp E     &kp R           &kp T     &kp LGUI            &pluseq       &kp Y            &kp U         &kp I     &kp O     &kp P    
                 &kp A     &kp S    &kp D     &kp F           &kp G     &kp ESC             &kp SQT       &kp H            &kp J         &kp K     &kp L     &kp SEMI 
-                &kp Z     &kp X    &kp C     &kp V           &kp B     &mo NUM             &kp NUM       &kp N            &kp M         &kp COMMA &kp DOT   &questline
+                &kp Z     &kp X    &kp C     &kp V           &kp B     &mo NUM             &mo NUM       &kp N            &kp M         &kp COMMA &kp DOT   &questline
                 &kp LCTRL &kp TAB  &kp LALT  &mt LSHIFT CAPS &kp SPACE &tdl FUN FUN        &tdl FUN FUN  &tdl NAV NAV     &kp BSPC      &kp LBKT  &kp RBKT  &fbslash
             >;
         };
@@ -259,7 +265,7 @@
             >;
         };
 
-        number_layer_mods {
+        number_layer_mods_swap {
             display-name = "NumberModSWAP";
             bindings = < 
             //  ------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -363,8 +369,8 @@
                 &kp F1         &kp F2       &kp F3       &kp F4       &kp F5       &kp F6            &kp F1         &kp F2       &kp F3       &kp F4       &kp F5       &kp F6
                 &kp F7         &kp F8       &kp F9       &kp F10      &kp F11      &kp F12           &kp F7         &kp F8       &kp F9       &kp F10      &kp F11      &kp F12
                 &bt BT_SEL 0   &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR        &bt BT_SEL 0   &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR
-                &sys_reset     &soft_off    &kp PSCRN    &to          &to NAV      &to GAMING        &sys_reset     &soft_off    &kp PSCRN    &to          &to NAV      &to GAMING
-                &studio_unlock &bootloader  &altf4       &to          &to NUM      &to WINDOWS       &studio_unlock &bootloader  &altf4       &to          &to NUM      &to WINDOWS
+                &sys_reset     &soft_off    &kp PSCRN    &to MED         &to NAV      &to GAMING        &sys_reset     &soft_off    &kp PSCRN    &to MED         &to NAV      &to GAMING
+                &studio_unlock &bootloader  &altf4       &to MED         &to NUM      &to WINDOWS       &studio_unlock &bootloader  &altf4       &to MED         &to NUM      &to WINDOWS
             >;
         };
 
