@@ -294,7 +294,7 @@
             // |  CTRL     |     NaN    |      NaN   |  NaN       |    NaN     |    NaN              | || |Right Click           | Close      |     DEL     |     ◀ W      |  ▶ W          |    ▼ W   |
                 &trans     &trans       &trans       &trans       &trans       &trans                     &trans                 &paste       &kp HOME       &kp UP         &kp END         &redo         
                 &kp LGUI   &trans       &trans       &trans       &trans       &trans                     &cut                   &copy        &kp LEFT       &kp DOWN       &kp RIGHT       &undo         
-                &kp LSHFT  &kp LALT     &kp LCTRL    &LSHFT       &trans       &trans                     &kp TAB                &kp BSPC     &kp PG_UP      &trans   &kp PG_DN       &kp INSERT    
+                &kp LSHFT  &kp LALT     &kp LCTRL    &LSHFT       &trans       &trans                     &trans                &trans     &trans      &trans   &trans       &trans    
                 &kp LALT   &trans       &trans       &trans       &trans       &trans                     &mkp MB3               &mkp MB1     &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &msc SCRL_UP  
                 &kp LCTRL  &trans       &trans       &trans       &trans       &trans                     &mkp MB2               &altf4       &kp DEL        &msc SCRL_LEFT &msc SCRL_RIGHT &msc SCRL_DOWN
             >;
