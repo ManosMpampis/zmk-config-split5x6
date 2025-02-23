@@ -281,7 +281,7 @@
                 &kp RBRC        &kp RSHFT      &mo NAV  &kp COMMA    &kp DOT      &kp FSLH         &kp DOWN  &kp N0  &kp N0   &kp DOT      &kp LSHFT &kp LCTRL              
             >;
         };
-
+        /*
         navigation_layer {
             display-name = "Navigation";
             bindings =<
@@ -298,7 +298,7 @@
                 &kp LCTRL  &trans       &trans       &trans       &trans       &trans                     &mkp MB2               &altf4       &kp DEL        &msc SCRL_LEFT &msc SCRL_RIGHT &msc SCRL_DOWN
             >;
         };
-
+        */
         navigation_laye_mods {
             display-name = "NavigationMod";
             bindings =<
