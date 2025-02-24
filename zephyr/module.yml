@@ -1,0 +1,4 @@
+name: zmk-keyboard-splitPlank60
+build:
+  settings:
+    board_root: .

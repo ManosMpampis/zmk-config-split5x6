@@ -1,0 +1,16 @@
+if SHIELD_SPLITPLANK60_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "splitPlank60"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_SPLITPLANK60_LEFT || SHIELD_SPLITPLANK60_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

@@ -1,0 +1,13 @@
+file_format: "1"
+id: split_plank_60
+name: splitPlank60
+type: shield
+url: https://github.com/ManosMpampis/zmk-config-split5x6
+requires:
+  - pro_micro
+features:
+  - keys
+  - studio 
+siblings:
+  - split_plank_60_left
+  - split_plank_60_right
