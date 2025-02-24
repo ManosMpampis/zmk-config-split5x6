@@ -1,4 +1,4 @@
-#include "split_plank.dtsi"
+#include "split_plank_60.dtsi"
 
 &transform {
     col-offset = <6>;
