@@ -12,12 +12,7 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 10
 
 
-#if defined (MIRYOKU_KLUDGE_MOUSEKEYSPR)
-  #include <behaviors/mouse_move.dtsi>
-  #include <behaviors/mouse_scroll.dtsi>
-#else
-  #include <dt-bindings/zmk/pointing.h>
-#endif
+#include <dt-bindings/zmk/pointing.h>
 
 #include "miryoku/miryoku.h"
 
