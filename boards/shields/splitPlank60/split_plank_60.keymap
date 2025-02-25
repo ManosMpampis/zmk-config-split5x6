@@ -1,4 +1,5 @@
 #include "miryoku/custom_config.h"
+#include "miryoku/mapping/60/split_plank_60.h"
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -45,21 +46,7 @@
   #include "miryoku/miryoku_behaviors.dtsi"
 #endif
 
-
-
 /*
-#define U_BASE   0
-#define U_GAME   1
-#define U_TAP    2
-#define U_BUTTON 3
-#define U_NAV    4
-#define U_MOUSE  5
-#define U_MEDIA  6
-#define U_NUM    7
-#define U_SYM    8
-#define U_FUN    9
-*/
-
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -196,4 +183,18 @@
             >;
         };
     };
+};
+*/
+
+/ {
+  keymap {
+    compatible = "zmk,keymap";
+#define MIRYOKU_X(LAYER, STRING) \
+    LAYER { \
+      display-name = STRING; \
+      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_##LAYER, MIRYOKU_LAYER_##LAYER) >; \
+    };
+MIRYOKU_LAYER_LIST
+#undef MIRYOKU_X
+  };
 };
