@@ -113,11 +113,11 @@
             display-name = "Button";
             bindings = <
             
-            &kp LC(Z)              &kp LC(X)              &kp LC(C)              &kp LC(V)              &kp LC(Y)             &none                       &none     &kp LC(Y)              &kp LC(V)              &kp LC(C)              &kp LC(X)              &kp LC(Z)               
+            &kp LC(Z)          &kp LC(X)          &kp LC(C)          &kp LC(V)          &kp LC(Y)         &none                       &none     &kp LC(Y)          &kp LC(V)          &kp LC(C)          &kp LC(X)          &kp LC(Z)               
             &kp LGUI           &kp LALT           &kp LCTRL          &kp LSHFT          &none             &none                       &none     &none              &kp RSHFT          &kp LCTRL          &kp LALT           &kp LGUI            
-            &kp LC(Z)              &kp LC(X)              &kp LC(C)              &kp LC(V)              &kp LC(Y)             &none                       &none     &kp LC(Y)              &kp LC(V)              &kp LC(C)              &kp LC(X)              &kp LC(Z)               
+            &kp LC(Z)          &kp LC(X)          &kp LC(C)          &kp LC(V)          &kp LC(Y)         &none                       &none     &kp LC(Y)          &kp LC(V)          &kp LC(C)          &kp LC(X)          &kp LC(Z)               
             &none              &none              &none              &none              &none             &none                       &none     &none              &none              &none              &none              &none               
-            &none              &none              &none              &mkp MB3             &mkp MB1            &mkp MB2                      &mkp MB2    &mkp MB1             &mkp MB3             &none              &none              &none
+            &none              &none              &none              &mkp MB3           &mkp MB1          &mkp MB2                    &mkp MB2  &mkp MB1           &mkp MB3           &none              &none              &none
 
             >;
         };
