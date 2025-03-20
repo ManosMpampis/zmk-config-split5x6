@@ -1,0 +1,74 @@
+// Copyright 2022 Manna Harbour
+// https://github.com/manna-harbour/miryoku
+
+#define MIRYOKU_KLUDGE_NEEDCOMBOS_TERM 50
+#define MIRYOKU_KLUDGE_NEEDCOMBOS_MACRO(LAYER, POSITION, BINDING) \
+bottomrowcombos_ ## LAYER ## _ ## POSITION { \
+  layers = <LAYER>; \
+  key-positions = <MIRYOKU_KLUDGE_NEEDCOMBOS_ ## POSITION>; \
+  bindings = <BINDING>; \
+  timeout-ms = <MIRYOKU_KLUDGE_NEEDCOMBOS_TERM>; \
+};
+
+/ {
+  combos {
+    compatible = "zmk,combos";
+#if defined (MIRYOKU_LAYERS_FLIP)
+  #if defined (MIRYOKU_ALPHAS_AZERTY)
+    #error "Not implemented. See https://github.com/manna-harbour/miryoku/issues/56"
+  #elif defined (MIRYOKU_ALPHAS_BEAKL15)
+    #error "Not implemented. See https://github.com/manna-harbour/miryoku/issues/56"
+  #elif defined (MIRYOKU_ALPHAS_COLEMAK)
+    #error "Not implemented. See https://github.com/manna-harbour/miryoku/issues/56"
+  #elif defined (MIRYOKU_ALPHAS_COLEMAKDHK)
+    #error "Not implemented. See https://github.com/manna-harbour/miryoku/issues/56"
+  #elif defined (MIRYOKU_ALPHAS_DVORAK)
+    #error "Not implemented. See https://github.com/manna-harbour/miryoku/issues/56"
+  #elif defined (MIRYOKU_ALPHAS_HALMAK)
+    #error "Not implemented. See https://github.com/manna-harbour/miryoku/issues/56"
+  #elif defined (MIRYOKU_ALPHAS_WORKMAN)
+    #error "Not implemented. See https://github.com/manna-harbour/miryoku/issues/56"
+  #elif defined (MIRYOKU_ALPHAS_QWERTY)
+    #error "Not implemented. See https://github.com/manna-harbour/miryoku/issues/56"
+  #elif defined (MIRYOKU_ALPHAS_QWERTZ)
+    #error "Not implemented. See https://github.com/manna-harbour/miryoku/issues/56"
+  #else
+    #error "Not implemented. See https://github.com/manna-harbour/miryoku/issues/56"
+  #endif
+  #if defined (MIRYOKU_NAV_INVERTEDT)
+    #error "Not implemented. See https://github.com/manna-harbour/miryoku/issues/56"
+  #elif defined (MIRYOKU_NAV_VI)
+    #error "Not implemented. See https://github.com/manna-harbour/miryoku/issues/56"
+  #else
+    #error "Not implemented. See https://github.com/manna-harbour/miryoku/issues/56"
+  #endif
+#else
+  #if defined (MIRYOKU_ALPHAS_AZERTY)
+    #error "Not implemented. See https://github.com/manna-harbour/miryoku/issues/56"
+  #elif defined (MIRYOKU_ALPHAS_BEAKL15)
+    #error "Not implemented. See https://github.com/manna-harbour/miryoku/issues/56"
+  #elif defined (MIRYOKU_ALPHAS_COLEMAK)
+    #error "Not implemented. See https://github.com/manna-harbour/miryoku/issues/56"
+  #elif defined (MIRYOKU_ALPHAS_COLEMAKDHK)
+    #error "Not implemented. See https://github.com/manna-harbour/miryoku/issues/56"
+  #elif defined (MIRYOKU_ALPHAS_DVORAK)
+    #error "Not implemented. See https://github.com/manna-harbour/miryoku/issues/56"
+  #elif defined (MIRYOKU_ALPHAS_HALMAK)
+    #error "Not implemented. See https://github.com/manna-harbour/miryoku/issues/56"
+  #elif defined (MIRYOKU_ALPHAS_WORKMAN)
+    #error "Not implemented. See https://github.com/manna-harbour/miryoku/issues/56"
+  #elif defined (MIRYOKU_ALPHAS_QWERTY)
+    MIRYOKU_KLUDGE_NEEDCOMBOS_MACRO(U_BASE, GRAVE, &kp GRAVE)
+    MIRYOKU_KLUDGE_NEEDCOMBOS_MACRO(U_BASE, CAPS,  &kp CAPS)
+    MIRYOKU_KLUDGE_NEEDCOMBOS_MACRO(U_BASE, DEL,   &kp DEL)
+    MIRYOKU_KLUDGE_NEEDCOMBOS_MACRO(U_BASE, SEMI, &kp SEMI)
+  #elif defined (MIRYOKU_ALPHAS_QWERTZ)
+    #error "Not implemented. See https://github.com/manna-harbour/miryoku/issues/56"
+  #else
+    #error "Not implemented.
+  #endif
+
+#endif
+    MIRYOKU_KLUDGE_NEEDCOMBOS_MACRO(U_GAME, DEL,  &kp DEL)
+  };
+};
