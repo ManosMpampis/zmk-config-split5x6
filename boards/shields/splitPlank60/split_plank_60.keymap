@@ -225,8 +225,8 @@ U_LT(U_BUTTON, Z)  U_MT(RALT, X)      &kp C              &kp V              &kp 
       bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_GAME, MIRYOKU_LAYER_GAME) >; \
     };
 
-    TAP { \
-      display-name = "Tap; \
+    TAP {
+      display-name = "Tap"; \
       bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_TAP, MIRYOKU_LAYER_TAP) >; \
     };
 
