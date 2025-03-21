@@ -142,7 +142,7 @@ U_NU,              U_NU,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT
 &kp N1,            &kp N2,            &kp N3,            &kp N4,            &kp N5,            &kp MINUS,               &kp BSLH,                    &kp N6,           &kp N7,            &kp N8,            &kp N9,            &kp N0,              \
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp EQUAL,               &kp LBKT,                    &kp Y,            &kp U,             &kp I,             &kp O,             &kp P,             \
 U_MT(LGUI, A),     U_MT(LALT, S),     U_MT(LCTRL, D),    U_MT(LSHFT, F),    &kp G,             &kp GRAVE,               &kp RBKT,                    &kp H,            U_MT(LSHFT, J),    U_MT(LCTRL, K),    U_MT(LALT, L),     U_MT(LGUI, SQT),   \
-U_LT(U_BUTTON, Z), U_MT(RALT, X),     &kp C,             &kp V,             &kp B,             &key_repeat,             U_LT(U_FN, SEMI),            &kp N,            &kp M,             &kp COMMA,         U_MT(RALT, DOT),   U_LT(U_BUTTON, SLASH), \
+U_LT(U_BUTTON, Z), U_MT(RALT, X),     &kp C,             &kp V,             &kp B,             &key_repeat,             U_LT(U_FUN, SEMI),            &kp N,            &kp M,             &kp COMMA,         U_MT(RALT, DOT),   U_LT(U_BUTTON, SLASH), \
 &kp LCTRL,         &kp LGUI,          &kp LALT,          U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT(U_MOUSE, TAB),      U_LT(U_SYM, RET),            U_LT(U_NUM, BSPC),&kp LEFT,          &kp DOWN,          &kp UP,      &kp RIGHT
  
 #define MIRYOKU_ALTERNATIVES_BASE_QWERTZ \
