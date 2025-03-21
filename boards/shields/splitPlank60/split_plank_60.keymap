@@ -186,6 +186,7 @@
 };
 */
 
+/*
 / {
   keymap {
     compatible = "zmk,keymap";
@@ -196,5 +197,66 @@
     };
 MIRYOKU_LAYER_LIST
 #undef MIRYOKU_X
+  };
+};
+*/
+
+/ {
+  keymap {
+    compatible = "zmk,keymap";
+    BASE { \
+      display-name = "Base"; \
+      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_BASE, MIRYOKU_LAYER_BASE) >; \
+    };
+
+    EXTRA { \
+      display-name = "Extra"; \
+      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_EXTRA, MIRYOKU_LAYER_EXTRA) >; \
+    };
+
+    GAME { \
+      display-name = "Game"; \
+      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_GAME, MIRYOKU_LAYER_GAME) >; \
+    };
+
+    TAP { \
+      display-name = "Tap; \
+      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_TAP, MIRYOKU_LAYER_TAP) >; \
+    };
+
+    BUTTON { \
+      display-name = "Button"; \
+      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_BUTTON, MIRYOKU_LAYER_BUTTON) >; \
+    };
+
+    NAV { \
+      display-name = "Nav"; \
+      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_NAV, MIRYOKU_LAYER_NAV) >; \
+    };
+
+    MOUSE { \
+      display-name = "Mouse"; \
+      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_MOUSE, MIRYOKU_LAYER_MOUSE) >; \
+    };
+
+    MEDIA { \
+      display-name = "Media"; \
+      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_MEDIA, MIRYOKU_LAYER_MEDIA) >; \
+    };
+
+    NUM { \
+      display-name = "Num"; \
+      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_NUM, MIRYOKU_LAYER_NUM) >; \
+    };
+
+    SYM { \
+      display-name = "Sym"; \
+      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_SYM, MIRYOKU_LAYER_SYM) >; \
+    };
+
+    FUN { \
+      display-name = "Fun"; \
+      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_FUN, MIRYOKU_LAYER_FUN) >; \
+    };
   };
 };
