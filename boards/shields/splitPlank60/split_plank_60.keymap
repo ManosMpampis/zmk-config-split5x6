@@ -217,7 +217,7 @@ BASE_FROW{
   >;
 };
 
-    MIRYOKU_X(BASE_FROW,   "BaseF")
+   // MIRYOKU_X(BASE_FROW,   "BaseF")
     MIRYOKU_X(EXTRA_FROW,  "ExtraF")
     MIRYOKU_X(TAP_FROW,    "TapF")
     MIRYOKU_X(BUTTON_FROW, "ButtonF")
