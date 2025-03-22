@@ -9,5 +9,6 @@ features:
   - keys
   - studio 
 siblings:
+  - split_plank_60_dongle
   - split_plank_60_left
   - split_plank_60_right
