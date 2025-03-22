@@ -491,7 +491,7 @@ U_NA,              &kp RALT,          &u_to_U_MEDIA,     &u_to_U_FUN,       U_NA
 U_NU,              U_NU,              U_NA,              U_NA,              U_NA,              U_NU,                    U_NU,  &kp TAB,              &kp SPACE,         &kp K_APP,         U_NU,              U_NU
  
 #define MIRYOKU_ALTERNATIVES_FUN \
-U_NU,              U_NU,              U_NU,              U_NU,              U_NU,              U_NU,                    &u_to_U_GAME,  &u_to_U_BASEF,                 U_NU,              U_NU,              U_NU,              U_NU,               \
+U_NU,              U_NU,              U_NU,              U_NU,              U_NU,              U_NU,                    &u_to_U_GAME,  &u_to_U_BASE_FROW,                 U_NU,              U_NU,              U_NU,              U_NU,               \
 &kp F12,           &kp F7,            &kp F8,            &kp F9,            &kp PSCRN,         U_NU,                    U_NU,  U_NA,                 &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,            \
 &kp F11,           &kp F4,            &kp F5,            &kp F6,            &kp SLCK,          U_NU,                    U_NU,  U_NA,                 &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          \
 &kp F10,           &kp F1,            &kp F2,            &kp F3,            &kp PAUSE_BREAK,   U_NU,                    U_NU,  U_NA,                 &u_to_U_FUN,       &u_to_U_MEDIA,     &kp RALT,          U_NA,               \
