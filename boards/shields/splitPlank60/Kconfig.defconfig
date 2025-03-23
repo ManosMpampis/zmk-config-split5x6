@@ -1,7 +1,7 @@
 if SHIELD_SPLITPLANK60_DONGLE
 
 config ZMK_KEYBOARD_NAME
-    default "splitPlank60"
+    default "splitPlank60V2"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
