@@ -19,8 +19,8 @@ config BT_MAX_CONN
 config BT_MAX_PAIRED
     default 7
 
-config ZMK_USB_BOOT
-    default y
+#config ZMK_USB_BOOT
+#    default y
 
 endif
 
@@ -28,5 +28,8 @@ if SHIELD_SPLITPLANK60_LEFT || SHIELD_SPLITPLANK60_RIGHT || SHIELD_SPLITPLANK60_
 
 config ZMK_SPLIT
     default y
+
+#config ZMK_USB_BOOT
+#    default y
 
 endif
