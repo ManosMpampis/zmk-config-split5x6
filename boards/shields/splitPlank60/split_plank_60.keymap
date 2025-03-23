@@ -46,6 +46,10 @@
   #include "miryoku/miryoku_behaviors.dtsi"
 #endif
 
+#if defined (MIRYOKU_KLUDGE_NEEDCOMBOS)
+  #include "miryoku_kludge_needcombos.dtsi"
+#endif
+
 /*
 / {
     keymap {

@@ -1,9 +1,5 @@
 #include "split_plank_60.dtsi"
 
-&transform {
-    col-offset = <6>;
-};
-
 &kscan {
     /*
     col-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>,
