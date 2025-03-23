@@ -12,31 +12,7 @@
     }; \
   }; \
 };
-/*
-#define MIRYOKU_SHIFT_FUNCTION_L(NAME, BINDING, SHIFT_BINDING) \
-/ { \
-  behaviors { \
-    NAME: NAME { \
-      compatible = "zmk,behavior-mod-morph"; \
-      #binding-cells = <0>; \
-      bindings = <BINDING>, <SHIFT_BINDING>; \
-      mods = <MOD_LSFT>; \
-    }; \
-  }; \
-};
 
-#define MIRYOKU_SHIFT_FUNCTION_R(NAME, BINDING, SHIFT_BINDING) \
-/ { \
-  behaviors { \
-    NAME: NAME { \
-      compatible = "zmk,behavior-mod-morph"; \
-      #binding-cells = <0>; \
-      bindings = <BINDING>, <SHIFT_BINDING>; \
-      mods = <MOD_RSFT>; \
-    }; \
-  }; \
-};
-*/
 #define MIRYOKU_SHIFT_MACRO(NAME, BINDING, SHIFT_BINDING) \
 U_MACRO(u_macro_ ## NAME, wait-ms = <0>; bindings = <SHIFT_BINDING>;) \
 MIRYOKU_SHIFT_FUNCTION(NAME, BINDING, &u_macro_ ## NAME)
@@ -50,10 +26,9 @@ MIRYOKU_SHIFT_MACRO(u_bt_sel_4, &bt BT_SEL 4, &bt BT_SEL 4 &bt BT_CLR)
 MIRYOKU_SHIFT_FUNCTION(u_out_tog, &out OUT_TOG, &out OUT_USB)
 
 MIRYOKU_SHIFT_FUNCTION(u_caps_word, &caps_word, &kp CAPS)
-/*
-MIRYOKU_SHIFT_FUNCTION_L(u_caps_lock_l, &RSHFT, &kp CAPS)
-MIRYOKU_SHIFT_FUNCTION_R(u_caps_lock_r, &LSHFT, &kp CAPS)
-*/
+
+MIRYOKU_SHIFT_MACRO(u_bspc_del, &kp BSPC, &kp DEL)
+
 #if defined (MIRYOKU_KLUDGE_GLOBALSHIFTFUNCTIONS)
 
 MIRYOKU_SHIFT_FUNCTION(u_rgb_tog, &rgb_ug RGB_TOG, &rgb_ug RGB_OFF)

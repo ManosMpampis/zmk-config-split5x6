@@ -6,11 +6,11 @@
 #pragma once
 
 #define MIRYOKU_ALTERNATIVES_GAME \
-&to U_BASE,        &kp N1,            &kp N2,            &kp N3,            &kp N4,            &kp N5,                  &kp N6,    &kp N7,            &kp N8,            &kp N9,            &kp N0,        &kp MINUS, \
+&kp GRAVE,         &kp N1,            &kp N2,            &kp N3,            &kp N4,            &kp N5,                  &kp N6,    &kp N7,            &kp N8,            &kp N9,            &kp N0,        &kp MINUS, \
 &kp TAB,           &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,                   &kp Y,     &kp U,             &kp I,             &kp O,             &kp P,         &kp EQUAL,  \
 &kp CAPS,          &kp A,             &kp S,             &kp D,             &kp F,             &kp G,                   &kp H,     &kp J,             &kp K,             &kp L,             &kp SEMICOLON, &kp SQT,   \
 &kp LSHFT,         &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,                   &kp N,     &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,     &kp BSLH, \
-&kp LCTRL,         &kp LGUI,          &kp LALT,          &kp GRAVE,         &kp ESC,           &kp SPACE,               &kp RET,   &kp BSPC,          &kp LEFT,          &kp DOWN,          &kp UP,        &kp RIGHT
+&kp LCTRL,         &kp LGUI,          &kp LALT,          &u_to_U_BASE_FROW, &kp ESC,           &kp SPACE,               &kp RET,   &kp BSPC,          &kp LEFT,          &kp DOWN,          &kp UP,        &kp RIGHT
 
 #define MIRYOKU_ALTERNATIVES_BASE_AZERTY_FLIP \
 &kp N1,            &kp N2,            &kp N3,            &kp N4,            &kp N5,            &kp MINUS,               &kp BSLH,                    &kp N6,           &kp N7,            &kp N8,            &kp N9,            &kp N0,    \
@@ -143,14 +143,14 @@ U_NU,              U_NU,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp EQUAL,               &kp LBKT,                    &kp Y,            &kp U,             &kp I,             &kp O,             &kp P,             \
 U_MT(LGUI, A),     U_MT(LALT, S),     U_MT(LCTRL, D),    U_MT(LSHFT, F),    &kp G,             &kp GRAVE,               &kp RBKT,                    &kp H,            U_MT(LSHFT, J),    U_MT(LCTRL, K),    U_MT(LALT, L),     U_MT(LGUI, SQT),   \
 U_LT(U_BUTTON, Z), U_MT(RALT, X),     &kp C,             &kp V,             &kp B,             U_LT(U_MEDIA, TAB),      U_LT(U_FUN, SEMI),           &kp N,            &kp M,             &kp COMMA,         U_MT(RALT, DOT),   U_LT(U_BUTTON, SLASH), \
-&kp LCTRL,         &kp LGUI,          &kp LALT,          U_LT(U_MOUSE, ESC),U_LT(U_NAV, SPACE),&key_repeat,             U_LT(U_SYM, RET),            U_LT(U_NUM, BSPC),&kp LEFT,          &kp DOWN,          &kp UP,      &kp RIGHT
+&kp LCTRL,         &kp LGUI,          &kp LALT,          U_LT(U_MOUSE, ESC),U_LT(U_NAV, SPACE),&key_repeat,             U_LT(U_SYM, RET),            U_LT(U_NUM, u_bspc_del),&kp LEFT,          &kp DOWN,          &kp UP,      &kp RIGHT
 
 #define MIRYOKU_ALTERNATIVES_BASE_QWERTY_FROW \
 &kp GRAVE,         &kp N1,            &kp N2,            &kp N3,            &kp N4,            &kp N5,                  &kp N6,    &kp N7,            &kp N8,            &kp N9,            &kp N0,        &kp LBKT, \
 &kp MINUS,         &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,                   &kp Y,     &kp U,             &kp I,             &kp O,             &kp P,         &kp RBKT,  \
 &kp EQUAL,         U_MT(LGUI, A),     U_MT(LALT, S),     U_MT(LCTRL, D),    U_MT(LSHFT, F),    &kp G,                   &kp H,     U_MT(LSHFT, J),    U_MT(LCTRL, K),    U_MT(LALT, L),     U_MT(LGUI, SEMI), &kp SQT,   \
 &kp TAB,           &kp Z,             &kp X,             &kp C,             &kp V,             U_LT(U_MEDIA_FROW, B),        U_LT(U_FUN_FROW, N),     &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,     &kp BSLH, \
-&kp LCTRL,         &kp LGUI,          &kp LALT,          &kp DEL,           U_LT(U_MOUSE_FROW, ESC),U_LT(U_NAV_FROW, SPACE),      U_LT(U_NUM_FROW, RET),   U_LT(U_SYM_FROW, BSPC),          &kp LEFT,          &kp DOWN,          &kp UP,        &kp RIGHT
+&kp LCTRL,         &kp LGUI,          &kp LALT,          &kp DEL,           U_LT(U_MOUSE_FROW, ESC),U_LT(U_NAV_FROW, SPACE),      U_LT(U_NUM_FROW, RET),   U_LT(U_SYM_FROW, u_bspc_del),          &kp LEFT,          &kp DOWN,          &kp UP,        &kp RIGHT
 
 
 
