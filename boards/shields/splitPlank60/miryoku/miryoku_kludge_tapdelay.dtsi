@@ -9,3 +9,28 @@ MIRYOKU_TAPDELAY_LT(CODE##EMPTY)
 MIRYOKU_TAPDELAY_LIST
 
 #undef MIRYOKU_X
+
+/ {
+  behaviors {
+    u_tapdelay_mt_u_bspc_del: u_tapdelay_mt_u_bspc_del {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      tapping-term-ms = <U_TAPPING_TERM>;
+      flavor = "tap-preferred";
+      bindings = <&kp>, <&u_tapdelay_tap_u_bspc_del>;
+    };
+  };
+};
+
+
+/ {
+  behaviors {
+    u_tapdelay_lt_u_bspcu_bspc_del: u_tapdelay_lt_u_bspc_del {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      tapping-term-ms = <U_TAPPING_TERM>;
+      flavor = "tap-preferred";
+      bindings = <&mo>, <&u_tapdelay_tap_u_bspc_del>;
+    };
+  };
+};
