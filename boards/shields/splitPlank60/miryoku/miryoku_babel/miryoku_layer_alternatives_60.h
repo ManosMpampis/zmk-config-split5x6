@@ -148,7 +148,7 @@ U_LT(U_BUTTON, Z), U_MT(RALT, X),     &kp C,             &kp V,             &kp 
 #define MIRYOKU_ALTERNATIVES_BASE_QWERTY_FROW \
 &kp GRAVE,         &kp N1,            &kp N2,            &kp N3,            &kp N4,            &kp N5,                  &kp N6,    &kp N7,            &kp N8,            &kp N9,            &kp N0,        &kp LBKT, \
 &kp MINUS,         &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,                   &kp Y,     &kp U,             &kp I,             &kp O,             &kp P,         &kp RBKT,  \
-&kp EQUAL,         U_MT(LGUI, A),     U_MT(LALT, S),     U_MT(LCTRL, D),    U_MT(LSHFT, F),    &kp G,                   &kp H,     U_MT(LSHFT, J),    U_MT(LCTRL, K),    U_MT(LALT, L),     U_MT(LGUI, SEMI), &kp SQT,   \
+&kp EQUAL,         U_MT(LGUI, A),     U_MT(LALT, S),     U_MT(LCTRL, D),    U_MT(LSHFT, F),    U_KP(G),                 U_KP(H),     U_MT(LSHFT, J),    U_MT(LCTRL, K),    U_MT(LALT, L),     U_MT(LGUI, SEMI), &kp SQT,   \
 &kp TAB,           &kp Z,             &kp X,             &kp C,             &kp V,             U_LT(U_MEDIA_FROW, B),        U_LT(U_FUN_FROW, N),     &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,     &kp BSLH, \
 &kp LCTRL,         &kp LGUI,          &kp LALT,          &kp DEL,           U_LT(U_MOUSE_FROW, ESC),U_LT(U_NAV_FROW, SPACE),      U_LT(U_NUM_FROW, RET),   U_LT(U_SYM_FROW, u_bspc_del),          &kp LEFT,          &kp DOWN,          &kp UP,        &kp RIGHT
 
