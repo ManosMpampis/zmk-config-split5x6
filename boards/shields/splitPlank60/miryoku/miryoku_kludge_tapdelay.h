@@ -6,6 +6,9 @@
 #define MIRYOKU_TAPDELAY_TAP(CODE) \
 U_MACRO(u_tapdelay_tap_##CODE, bindings = <&macro_press &kp CODE>, <&macro_release &kp CODE>;)
 
+#define MIRYOKU_TAPDELAY_TAP_BEHAVIORS(CODE) \
+U_MACRO(u_tapdelay_tap_##CODE, bindings = <&macro_press &CODE>, <&macro_release &CODE>;)
+
 #define MIRYOKU_TAPDELAY_MT(CODE) \
 / { \
   behaviors { \
@@ -48,6 +51,9 @@ U_MACRO(u_tapdelay_tap_##CODE, bindings = <&macro_press &kp CODE>, <&macro_relea
 #define U_MT(MOD, TAP) &u_tapdelay_mt_##TAP MOD 0
 #define U_LT(LAYER, TAP) &u_tapdelay_lt_##TAP LAYER 0
 #define U_KP(TAP) &u_tapdelay_kp_##TAP 0 0
+
+#define MIRYOKU_TAPDELAY_LIST_BEHAVIORS \
+MIRYOKU_X(u_bspc_del,)
 
 #define MIRYOKU_TAPDELAY_LIST \
 MIRYOKU_X(A,) \
