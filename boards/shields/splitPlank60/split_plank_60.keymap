@@ -39,11 +39,7 @@
   #include "miryoku/miryoku_kludge_bottomrowcombos.dtsi"
 #endif
 
-#if defined (MIRYOKU_KLUDGE_TAPDELAY)
-  #include "miryoku/miryoku_kludge_tapdelay.dtsi"
-#else
-  #include "miryoku/miryoku_behaviors.dtsi"
-#endif
+#include "miryoku/miryoku_behaviors.dtsi"
 
 #if defined (MIRYOKU_KLUDGE_NEEDCOMBOS)
   #include "miryoku/miryoku_kludge_needcombos.dtsi"
