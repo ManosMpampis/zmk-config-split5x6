@@ -7,7 +7,6 @@
 #define MIRYOKU_CLIPBOARD_WIN
 #define MIRYOKU_KLUDGE_MOUSEKEYSPR
 
-// can be testest without because the pr is for a specific board
 #define MIRYOKU_KLUDGE_TAPDELAY
 
 //check if they work because of the split keyobard locality

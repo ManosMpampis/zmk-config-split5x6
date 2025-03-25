@@ -9,9 +9,6 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/ext_power.h>
 
-
-#include <dt-bindings/zmk/pointing.h>
-
 #include "miryoku/miryoku.h"
 
 
@@ -20,7 +17,6 @@
 
 #include "miryoku/miryoku_double_tap_guard.dtsi"
 
-#include <dt-bindings/zmk/pointing.h>
 #if defined (MIRYOKU_KLUDGE_MOUSEKEYSPR)
   #include "miryoku/miryoku_kludge_mousekeyspr.dtsi"
 #else
