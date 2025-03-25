@@ -148,8 +148,8 @@ U_LT(U_BUTTON, Z), U_MT(RALT, X),     &kp C,             &kp V,             &kp 
 #define MIRYOKU_ALTERNATIVES_BASE_QWERTY_FROW \
 &kp GRAVE,         &kp N1,            &kp N2,            &kp N3,            &kp N4,            &kp N5,                  &kp N6,    &kp N7,            &kp N8,            &kp N9,            &kp N0,        &kp LBKT, \
 &kp MINUS,         &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,                   &kp Y,     &kp U,             &kp I,             &kp O,             &kp P,         &kp RBKT,  \
-&kp EQUAL,         U_MT(LGUI, A),     U_MT(LALT, S),     U_MT(LCTRL, D),    U_MT(LSHFT, F),    U_KP(G),                 U_KP(H),     U_MT(LSHFT, J),    U_MT(LCTRL, K),    U_MT(LALT, L),     U_MT(LGUI, SEMI), &kp SQT,   \
-&kp TAB,           &kp Z,             &kp X,             &kp C,             &kp V,             U_LT(U_MEDIA_FROW, B),        U_LT(U_FUN_FROW, N),     &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,     &kp BSLH, \
+&kp EQUAL,         U_MT(LGUI, A),     U_MT(LALT, S),     U_MT(LCTRL, D),    U_MT(LSHFT, F),    U_KP(G),                 U_KP(H),   U_MT(LSHFT, J),    U_MT(LCTRL, K),    U_MT(LALT, L),     U_MT(LGUI, SEMI), &kp SQT,   \
+&kp TAB,           &kp Z,             &kp X,             &kp C,             &kp V,             U_LT(U_MEDIA_FROW, B),   U_LT(U_FUN_FROW, N),     &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,     &kp BSLH, \
 &kp LCTRL,         &kp LGUI,          &kp DEL,          &kp LALT,           U_LT(U_MOUSE_FROW, ESC),U_LT(U_NAV_FROW, SPACE),      U_LT(U_NUM_FROW, RET),   U_LT(U_SYM_FROW, u_bspc_del),          &kp LEFT,          &kp DOWN,          &kp UP,        &kp RIGHT
 
 
@@ -344,14 +344,14 @@ U_NU,              U_NU,              U_NU,              U_NU,              &u_t
 U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              U_NU,                    U_NU,  U_RDO,                U_PST,             U_CPY,             U_CUT,             U_UND,             \
 &kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              U_NU,                    U_NU,  &u_caps_word,         &kp LEFT,          &kp DOWN,          &kp UP,            &kp RIGHT,         \
 &studio_unlock,    &kp RALT,          &u_to_U_NUM,       &u_to_U_NAV,       U_NA,              U_NU,                    U_NU,  &kp INS,              &kp HOME,          &kp PG_DN,         &kp PG_UP,         &kp END,           \
-U_NU,              U_NU,              U_NA,              U_NA,              U_NA,              U_NU,                    U_NU,  &kp RET,              &u_bspc_del,    &kp DEL,           U_NU,              U_NU
+U_NU,              U_NU,              U_NA,              U_NA,              U_NA,              U_NU,                    U_NU,  &kp RET,              &u_bspc_del,       &kp DEL,           U_NU,              U_NU
 
 #define MIRYOKU_ALTERNATIVES_NAV_FROW \
 U_NU,              U_NU,              U_NU,              U_NU,              &u_to_U_BASE,      &u_to_U_GAME,            U_NU,                 U_NU,              U_NU,              U_NU,              U_NU,       U_NU,        \
 U_NU,              U_BOOT,            &u_to_U_TAP_FROW,  &u_to_U_EXTRA_FROW, &u_to_U_BASE_FROW, U_NA,                   U_RDO,                U_PST,             U_CPY,             U_CUT,             U_UND,      U_NU,        \
 U_NU,              &kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,                    &u_caps_word,         &kp LEFT,          &kp DOWN,          &kp UP,            &kp RIGHT,  U_NU,        \
 U_NU,              &studio_unlock,    &kp RALT,          &u_to_U_NUM_FROW,  &u_to_U_NAV_FROW,  U_NA,                    &kp INS,              &kp HOME,          &kp PG_DN,         &kp PG_UP,         &kp END,    U_NU,        \
-U_NU,              U_NU,              U_NU,              U_NA,              U_NA,              U_NA,                    &kp RET,              &u_bspc_del,    &kp DEL,           U_NU,              U_NU,       U_NU
+U_NU,              U_NU,              U_NU,              U_NA,              U_NA,              U_NA,                    &kp RET,              &u_bspc_del,       &kp DEL,           U_NU,              U_NU,       U_NU
 
 
 #define MIRYOKU_ALTERNATIVES_MOUSE_INVERTEDT_FLIP \
@@ -479,7 +479,7 @@ U_NU,              U_NU,              &kp LPAR,          &kp RPAR,          &kp 
 U_NU,              U_NU,              U_NU,              U_NU,              U_NU,              U_NU,                    &u_to_U_GAME,         &u_to_U_BASE,      U_NU,              U_NU,              U_NU,     U_NU,        \
 U_NU,              &kp LBRC,          &kp AMPS,          &kp ASTRK,         &kp LPAR,          &kp RBRC,                U_NA,                 &u_to_U_BASE_FROW, &u_to_U_EXTRA_FROW, &u_to_U_TAP_FROW, U_BOOT,   U_NU,        \
 U_NU,              &kp COLON,         &kp DLLR,          &kp PRCNT,         &kp CARET,         &kp PLUS,                U_NA,                 &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI, U_NU,        \
-U_NU,              &kp TILDE,         &kp EXCL,          &kp AT,            &kp HASH,          &kp PIPE,                U_NA,                 &u_to_U_SYM_FROW,  &u_to_U_MOUSE_FROW, &kp RALT,         studio_unlock, U_NU,   \
+U_NU,              &kp TILDE,         &kp EXCL,          &kp AT,            &kp HASH,          &kp PIPE,                U_NA,                 &u_to_U_SYM_FROW,  &u_to_U_MOUSE_FROW, &kp RALT,         &studio_unlock, U_NU,   \
 U_NU,              U_NU,              U_NU,              &kp LPAR,          &kp RPAR,          &kp UNDER,               U_NA,                 U_NA,              U_NA,              U_NU,              U_NU,     U_NU
 
 
@@ -501,7 +501,7 @@ U_NU,              U_NU,              &kp K_APP,         &kp SPACE,         &kp 
 U_NU,              U_NU,              U_NU,              U_NU,              U_NU,              U_NU,                    &u_to_U_GAME,         &u_to_U_BASE,      U_NU,              U_NU,              U_NU,     U_NU,         \
 U_NU,              &kp F12,           &kp F7,            &kp F8,            &kp F9,            &kp PSCRN,               U_NA,                 &u_to_U_BASE_FROW, &u_to_U_EXTRA_FROW, &u_to_U_TAP_FROW, U_BOOT,   U_NU,         \
 U_NU,              &kp F11,           &kp F4,            &kp F5,            &kp F6,            &kp SLCK,                U_NA,                 &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI, U_NU,         \
-U_NU,              &kp F10,           &kp F1,            &kp F2,            &kp F3,            &kp PAUSE_BREAK,         U_NA,                 &u_to_U_FUN_FROW,  &u_to_U_MEDIA_FROW, &kp RALT,         studio_unlock,     U_NU,\
+U_NU,              &kp F10,           &kp F1,            &kp F2,            &kp F3,            &kp PAUSE_BREAK,         U_NA,                 &u_to_U_FUN_FROW,  &u_to_U_MEDIA_FROW, &kp RALT,         &studio_unlock,     U_NU,\
 U_NU,              U_NU,              U_NU,              &kp K_APP,         &kp SPACE,         &kp TAB,                 U_NA,                 U_NA,              U_NA,              U_NU,              U_NU,     U_NU
 
  
