@@ -28,6 +28,7 @@ MIRYOKU_SHIFT_FUNCTION(u_out_tog, &out OUT_TOG, &out OUT_USB)
 MIRYOKU_SHIFT_FUNCTION(u_caps_word, &caps_word, &kp CAPS)
 
 MIRYOKU_SHIFT_MACRO(u_bspc_del, &kp BSPC, &kp DEL)
+MIRYOKU_SHIFT_MACRO(u_del_bspc, &kp DEL, &kp BSPC )
 
 #if defined (MIRYOKU_KLUDGE_GLOBALSHIFTFUNCTIONS)
 
@@ -41,16 +42,3 @@ MIRYOKU_SHIFT_FUNCTION(u_rgb_bri, &rgb_ug RGB_BRI, &rgb_ug RGB_BRD)
 MIRYOKU_SHIFT_FUNCTION(u_ep_tog, &ext_power EP_TOG, &ext_power EP_OFF)
 
 #endif
-
-// / {
-// combos {
-//   compatible = "zmk,combos";
-//     caps_lock_with_shifts_BASE{ 
-//       layers = <BASE>;
-//       key-positions = <15 20>;
-//       bindings = <&CAPS>;
-//       timeout-ms = <50>;
-//     };
-//   };
-// };
-//

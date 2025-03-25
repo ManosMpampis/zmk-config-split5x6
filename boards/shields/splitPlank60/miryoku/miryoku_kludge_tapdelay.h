@@ -53,7 +53,8 @@ U_MACRO(u_tapdelay_tap_##CODE, bindings = <&macro_press &CODE>, <&macro_release 
 #define U_KP(TAP) &u_tapdelay_kp_##TAP 0 0
 
 #define MIRYOKU_TAPDELAY_LIST_BEHAVIORS \
-MIRYOKU_X(u_bspc_del,)
+MIRYOKU_X(u_bspc_del,) \
+MIRYOKU_X(u_del_bspc,)
 
 #define MIRYOKU_TAPDELAY_LIST \
 MIRYOKU_X(A,) \

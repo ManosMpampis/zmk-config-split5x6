@@ -50,8 +50,4 @@ MIRYOKU_LAYER_LIST
   #include "miryoku_kludge_needcombos.dtsi"
 #endif
 
-#if defined (MIRYOKU_KLUDGE_TAPDELAY)
-  #include "miryoku_kludge_tapdelay.dtsi"
-#else
-  #include "miryoku_behaviors.dtsi"
-#endif
+#include "miryoku_behaviors.dtsi"

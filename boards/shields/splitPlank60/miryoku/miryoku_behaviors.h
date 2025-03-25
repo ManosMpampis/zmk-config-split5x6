@@ -3,5 +3,94 @@
 
 #pragma once
 
-#define U_MT(MOD, TAP) &u_mt MOD TAP
-#define U_LT(LAYER, TAP) &u_lt LAYER TAP
+#define MIRYOKU_TAPDELAY_TAP(CODE) \
+U_MACRO(u_tap_##CODE, bindings = <&macro_tap &kp CODE>;)
+
+#define MIRYOKU_TAPDELAY_TAP_BEHAVIORS(CODE) \
+U_MACRO(u_tap_##CODE, bindings = <&macro_tap &CODE>;)
+
+#define MIRYOKU_TAPDELAY_MT(CODE) \
+/ { \
+  behaviors { \
+    u_mt_##CODE: u_mt_##CODE { \
+      compatible = "zmk,behavior-hold-tap"; \
+      #binding-cells = <2>; \
+      tapping-term-ms = <U_TAPPING_TERM>; \
+      flavor = "tap-preferred"; \
+      bindings = <&kp>, <&u_tap_##CODE>; \
+    }; \
+  }; \
+};
+
+#define MIRYOKU_TAPDELAY_LT(CODE) \
+/ { \
+  behaviors { \
+    u_lt_##CODE: u_lt_##CODE { \
+      compatible = "zmk,behavior-hold-tap"; \
+      #binding-cells = <2>; \
+      tapping-term-ms = <U_TAPPING_TERM>; \
+      flavor = "tap-preferred"; \
+      bindings = <&mo>, <&u_tap_##CODE>; \
+    }; \
+  }; \
+};
+
+#define MIRYOKU_TAPDELAY_KP(CODE) \
+/ { \
+  behaviors { \
+    u_kp_##CODE: u_kp_##CODE { \
+      compatible = "zmk,behavior-hold-tap"; \
+      #binding-cells = <2>; \
+      tapping-term-ms = <U_TAPPING_TERM>; \
+      flavor = "tap-preferred"; \
+      bindings = <&key_repeat>, <&u_tap_##CODE>; \
+    }; \
+  }; \
+};
+
+#define U_MT(MOD, TAP) &u_mt_##TAP MOD 0
+#define U_LT(LAYER, TAP) &u_lt_##TAP LAYER 0
+#define U_KP(TAP) &u_kp_##TAP 0 0
+
+#define MIRYOKU_TAPDELAY_LIST_BEHAVIORS \
+MIRYOKU_X(u_bspc_del,) \
+MIRYOKU_X(u_del_bspc,)
+
+#define MIRYOKU_TAPDELAY_LIST \
+MIRYOKU_X(A,) \
+MIRYOKU_X(B,) \
+MIRYOKU_X(C,) \
+MIRYOKU_X(D,) \
+MIRYOKU_X(E,) \
+MIRYOKU_X(F,) \
+MIRYOKU_X(G,) \
+MIRYOKU_X(H,) \
+MIRYOKU_X(I,) \
+MIRYOKU_X(J,) \
+MIRYOKU_X(K,) \
+MIRYOKU_X(L,) \
+MIRYOKU_X(M,) \
+MIRYOKU_X(N,) \
+MIRYOKU_X(O,) \
+MIRYOKU_X(P,) \
+MIRYOKU_X(Q,) \
+MIRYOKU_X(R,) \
+MIRYOKU_X(S,) \
+MIRYOKU_X(T,) \
+MIRYOKU_X(U,) \
+MIRYOKU_X(V,) \
+MIRYOKU_X(W,) \
+MIRYOKU_X(X,) \
+MIRYOKU_X(Y,) \
+MIRYOKU_X(Z,) \
+MIRYOKU_X(SQT,) \
+MIRYOKU_X(COMMA,) \
+MIRYOKU_X(DOT,) \
+MIRYOKU_X(SLASH,) \
+MIRYOKU_X(ESC,) \
+MIRYOKU_X(SPACE,) \
+MIRYOKU_X(TAB,) \
+MIRYOKU_X(RET,) \
+MIRYOKU_X(BSPC,) \
+MIRYOKU_X(DEL,) \
+MIRYOKU_X(SEMI,)
