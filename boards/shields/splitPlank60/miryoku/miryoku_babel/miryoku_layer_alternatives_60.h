@@ -10,7 +10,7 @@
 &kp TAB,           &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,                   &kp Y,     &kp U,             &kp I,             &kp O,             &kp P,         &kp EQUAL,  \
 &kp CAPS,          &kp A,             &kp S,             &kp D,             &kp F,             &kp G,                   &kp H,     &kp J,             &kp K,             &kp L,             &kp SEMICOLON, &kp SQT,   \
 &kp LSHFT,         &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,                   &kp N,     &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,     &kp BSLH, \
-&kp LCTRL,         &kp LGUI,          &u_to_U_BASE_FROW, &kp LALT,          &kp ESC,           &kp SPACE,               &kp RET,   &u_bspc_del,       &kp LEFT,          &kp DOWN,          &kp UP,        &kp RIGHT
+&kp LCTRL,         &kp LGUI,          &u_to_U_ESC_BASE_FROW, &kp LALT,          &kp SPACE,         &kp SPACE,               &kp RET,   &u_bspc_del,       &kp LEFT,          &kp DOWN,          &kp UP,        &kp RIGHT
 
 #define MIRYOKU_ALTERNATIVES_BASE_AZERTY_FLIP \
 &kp N1,            &kp N2,            &kp N3,            &kp N4,            &kp N5,            &kp MINUS,               &kp BSLH,                    &kp N6,           &kp N7,            &kp N8,            &kp N9,            &kp N0,    \
