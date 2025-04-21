@@ -7,7 +7,7 @@
     NAME: NAME { \
       compatible = "zmk,behavior-tap-dance"; \
       #binding-cells = <0>; \
-      tapping-term-ms = <U_TAPPING_TERM>; \
+      tapping-term-ms = <U_TAPPING_TERM_DT>; \
       bindings = <&none>, <BINDING>; \
     }; \
   }; \
@@ -24,7 +24,7 @@ MIRYOKU_LAYER_LIST
     NAME: NAME { \
       compatible = "zmk,behavior-tap-dance"; \
       #binding-cells = <0>; \
-      tapping-term-ms = <U_TAPPING_TERM>; \
+      tapping-term-ms = <U_TAPPING_TERM_DT>; \
       bindings = <&kp ESC>, <BINDING>; \
     }; \
   }; \

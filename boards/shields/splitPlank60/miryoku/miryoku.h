@@ -23,7 +23,8 @@
 #define U_NA &none // present but not available for use
 #define U_NU &none // available but not used
 
-#define U_TAPPING_TERM 250
+#define U_TAPPING_TERM 20ds0
+#define U_TAPPING_TERM_DT 250
 
 #include "miryoku_clipboard.h"
 
