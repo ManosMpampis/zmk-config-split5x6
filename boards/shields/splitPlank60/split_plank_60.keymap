@@ -181,7 +181,7 @@
 };
 */
 
-/*
+
 / {
   keymap {
     compatible = "zmk,keymap";
@@ -194,23 +194,24 @@ MIRYOKU_LAYER_LIST
 #undef MIRYOKU_X
   };
 };
-*/
 
+ 
+/*
 / {
   keymap {
     compatible = "zmk,keymap";
     BASE_FROW {
-      display-name = "Base";
+      display-name = "BaseF";
       bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_BASE_FROW, MIRYOKU_LAYER_BASE_FROW) >;
     };
 
     EXTRA_FROW {
-      display-name = "Extra";
+      display-name = "ExtraF";
       bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_EXTRA_FROW, MIRYOKU_LAYER_EXTRA_FROW) >;
     };
 
     TAP_FROW {
-      display-name = "Tap";
+      display-name = "TapF";
       bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_TAP_FROW, MIRYOKU_LAYER_TAP_FROW) >;
     };
 
@@ -306,3 +307,4 @@ MIRYOKU_LAYER_LIST
 
   };
 };
+*/
