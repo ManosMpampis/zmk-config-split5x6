@@ -157,7 +157,7 @@ U_LT(U_BUTTON, Z), U_MT(RALT, X),     &kp C,             &kp V,             &kp 
 &kp TAB,           &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,                   &kp Y,     &kp U,             &kp I,             &kp O,             &kp P,         &kp BSLH,  \
 &kp CAPS,          &kp A,             &kp S,             &kp D,             &kp F,             &kp G,                   &kp H,     &kp J,             &kp K,             &kp L,             &kp SEMICOLON, &kp SQT,   \
 &kp LSHFT,         &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,                   &kp N,     &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,     &kp RSHFT, \
-&kp LCTRL,         &kp LGUI,          &kp LALT,          U_LT(U_BUTTON, GRAVE), &kp SPACE,      &kp SPACE,              &kp SPACE, &kp RET,           &kp LEFT,          &kp DOWN,          &kp UP,        &kp RIGHT
+&kp LCTRL,         &kp LGUI,          &kp LALT,          U_LT(U_BUTTON, GRAVE), &kp SPACE,     &kp SPACE,              &kp SPACE, &kp RET,           &kp LEFT,          &kp DOWN,          &kp UP,        &kp RIGHT
 
 #define MIRYOKU_ALTERNATIVES_BUTTON_SIMPLE \
 &kp GRAVE,         &kp F1,            &kp F2,            &kp F3,            &kp F4,            &kp F5,                  &kp F6,    &kp F7,            &kp F8,            &kp F9,            &kp F10,        &u_bspc_del, \
@@ -597,28 +597,28 @@ U_NU,              U_NU,              U_NU,              U_NU,              U_NU
 U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              U_NU,                    U_NU,          &kp PSCRN,            &kp F7,            &kp F8,            &kp F9,            &kp F12,        \
 &kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              U_NU,                    U_NU,          &kp SLCK,             &kp F4,            &kp F5,            &kp F6,            &kp F11,        \
 &studio_unlock,    &kp RALT,          &u_to_U_MEDIA,     &u_to_U_FUN,       U_NA,              U_NU,                    U_NU,          &kp PAUSE_BREAK,      &kp F1,            &kp F2,            &kp F3,            &kp F10,        \
-U_NU,              U_NU,              U_NA,              U_NA,              U_NA,              U_NU,                    U_NU,          &kp TAB,              &kp SPACE,         &kp K_APP,         U_NU,              U_NU
+U_NU,              U_NU,              U_NA,              U_NA,              U_NA,              U_NU,                    U_NU,          &kp TAB,              &kp SPACE,         &kp K_APP,         &kp LA(F4),        U_NU
  
 #define MIRYOKU_ALTERNATIVES_FUN \
 U_NU,              U_NU,              U_NU,              U_NU,              U_NU,              U_NU,                    &u_to_U_GAME,  &u_to_U_BASE_FROW,    U_NU,              U_NU,              U_NU,              U_NU,           \
 &kp F12,           &kp F7,            &kp F8,            &kp F9,            &kp PSCRN,         U_NU,                    U_NU,          U_NA,                 &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,         \
 &kp F11,           &kp F4,            &kp F5,            &kp F6,            &kp SLCK,          U_NU,                    U_NU,          U_NA,                 &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,       \
 &kp F10,           &kp F1,            &kp F2,            &kp F3,            &kp PAUSE_BREAK,   U_NU,                    U_NU,          U_NA,                 &u_to_U_FUN,       &u_to_U_MEDIA,     &kp RALT,          &studio_unlock, \
-U_NU,              U_NU,              &kp K_APP,         &kp SPACE,         &kp TAB,           U_NU,                    U_NU,          U_NA,                 U_NA,              U_NA,              U_NU,              U_NU
+U_NU,              &kp LA(F4),        &kp K_APP,         &kp SPACE,         &kp TAB,           U_NU,                    U_NU,          U_NA,                 U_NA,              U_NA,              U_NU,              U_NU
 
 #define MIRYOKU_ALTERNATIVES_FUN_FLIP_FROW \
 U_NU,              U_NU,              U_NU,              U_NU,              &u_to_U_BASE,       &u_to_U_GAME,           U_NU,                 U_NU,              U_NU,              U_NU,              U_NU,          U_NU,           \
 U_NU,              U_BOOT,            &u_to_U_TAP_FROW,  &u_to_U_EXTRA_FROW,&u_to_U_BASE_FROW,  U_NA,                   &kp PSCRN,            &kp F7,            &kp F8,            &kp F9,            &kp F12,       U_NU,           \
 U_NU,              &kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,          U_NA,                   &kp SLCK,             &kp F4,            &kp F5,            &kp F6,            &kp F11,       U_NU,           \
 U_NU,              &studio_unlock,    &kp RALT,          &u_to_U_FUN_FROW,  &u_to_U_MEDIA_FROW, U_NA,                   &kp PAUSE_BREAK,      &kp F1,            &kp F2,            &kp F3,            &kp F10,       U_NU,           \
-U_NU,              U_NU,              U_NU,              U_NA,              U_NA,               U_NA,                   &kp TAB,              &kp SPACE,         &kp K_APP,         U_NU,              U_NU,          U_NU
+U_NU,              U_NU,              U_NU,              U_NA,              U_NA,               U_NA,                   &kp TAB,              &kp SPACE,         &kp K_APP,         &kp LA(F4),        U_NU,          U_NU
 
 #define MIRYOKU_ALTERNATIVES_FUN_FROW \
 U_NU,              U_NU,              U_NU,              U_NU,              U_NU,              U_NU,                    &u_to_U_GAME,         &u_to_U_BASE,      U_NU,              U_NU,              U_NU,               U_NU,      \
 U_NU,              &kp F12,           &kp F7,            &kp F8,            &kp F9,            &kp PSCRN,               U_NA,                 &u_to_U_BASE_FROW, &u_to_U_EXTRA_FROW, &u_to_U_TAP_FROW, U_BOOT,             U_NU,      \
 U_NU,              &kp F11,           &kp F4,            &kp F5,            &kp F6,            &kp SLCK,                U_NA,                 &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,           U_NU,      \
 U_NU,              &kp F10,           &kp F1,            &kp F2,            &kp F3,            &kp PAUSE_BREAK,         U_NA,                 &u_to_U_FUN_FROW,  &u_to_U_MEDIA_FROW, &kp RALT,         &studio_unlock,     U_NU,      \
-U_NU,              U_NU,              U_NU,              &kp K_APP,         &kp SPACE,         &kp TAB,                 U_NA,                 U_NA,              U_NA,              U_NU,              U_NU,               U_NU
+U_NU,              U_NU,              &kp LA(F4),        &kp K_APP,         &kp SPACE,         &kp TAB,                 U_NA,                 U_NA,              U_NA,              U_NU,              U_NU,               U_NU
 
  
 #define MIRYOKU_ALTERNATIVES_BUTTON \
