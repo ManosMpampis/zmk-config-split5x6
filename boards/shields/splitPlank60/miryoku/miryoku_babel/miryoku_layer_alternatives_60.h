@@ -149,10 +149,22 @@ U_LT(U_BUTTON, Z), U_MT(RALT, X),     &kp C,             &kp V,             &kp 
 &kp GRAVE,         &kp N1,            &kp N2,            &kp N3,            &kp N4,            &kp N5,                  &kp N6,    &kp N7,            &kp N8,            &kp N9,            &kp N0,        &kp LBKT, \
 &kp MINUS,         &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,                   &kp Y,     &kp U,             &kp I,             &kp O,             &kp P,         &kp RBKT,  \
 &kp EQUAL,         U_MT(LGUI, A),     U_MT(LALT, S),     U_MT(LCTRL, D),    U_MT(LSHFT, F),    U_KP(G),                 U_KP(H),   U_MT(LSHFT, J),    U_MT(LCTRL, K),    U_MT(LALT, L),     U_MT(LGUI, SEMI), &kp SQT,   \
-&kp LALT,           &kp Z,             &kp X,             &kp C,             &kp V,             U_LT(U_MEDIA_FROW, B),   U_LT(U_FUN_FROW, N),     &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,     &kp BSLH, \
-&kp LCTRL,         &kp LGUI,          &kp DEL,          &kp TAB,           U_LT(U_MOUSE_FROW, ESC),U_LT(U_NAV_FROW, SPACE),      U_LT(U_NUM_FROW, RET),   U_LT(U_SYM_FROW, u_bspc_del),          &kp LEFT,          &kp DOWN,          &kp UP,        &kp RIGHT
+&kp LALT,          &kp Z,             &kp X,             &kp C,             &kp V,             U_LT(U_MEDIA_FROW, B),   U_LT(U_FUN_FROW, N),     &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,     &kp BSLH, \
+&kp LCTRL,         &kp LGUI,          &kp DEL,           &kp TAB,           U_LT(U_MOUSE_FROW, ESC),U_LT(U_NAV_FROW, SPACE),      U_LT(U_NUM_FROW, RET),   U_LT(U_SYM_FROW, u_bspc_del),          &kp LEFT,          &kp DOWN,          &kp UP,        &kp RIGHT
 
+#define MIRYOKU_ALTERNATIVES_BASE_QWERTY_SIMPLE \
+&u_to_U_ESC_BASE_FROW, &kp N1,        &kp N2,            &kp N3,            &kp N4,            &kp N5,                  &kp N6,    &kp N7,            &kp N8,            &kp N9,            &kp N0,        &u_bspc_del, \
+&kp TAB,           &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,                   &kp Y,     &kp U,             &kp I,             &kp O,             &kp P,         &kp BSLH,  \
+&kp CAPS,          &kp A,             &kp S,             &kp D,             &kp F,             &kp G,                   &kp H,     &kp J,             &kp K,             &kp L,             &kp SEMICOLON, &kp SQT,   \
+&kp LSHFT,         &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,                   &kp N,     &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,     &kp RSHFT, \
+&kp LCTRL,         &kp LGUI,          &kp LALT,          U_LT(U_BUTTON, GRAVE), &kp SPACE,      &kp SPACE,              &kp SPACE, &kp RET,           &kp LEFT,          &kp DOWN,          &kp UP,        &kp RIGHT
 
+#define MIRYOKU_ALTERNATIVES_BUTTON_SIMPLE \
+&kp GRAVE,         &kp F1,            &kp F2,            &kp F3,            &kp F4,            &kp F5,                  &kp F6,    &kp F7,            &kp F8,            &kp F9,            &kp F10,        &u_bspc_del, \
+&kp TAB,           &kp F11,           &kp F12,           &kp E,             &kp R,             &kp T,                   &kp Y,     &kp U,             &kp MINUS,         &kp EQUAL,         &kp LBKT,       &kp RBKT,  \
+&kp CAPS,          &kp A,             &kp S,             &kp D,             &kp F,             &kp G,                   &kp H,     &kp J,             &kp K,             &kp L,             &kp SEMICOLON,  &kp SQT,   \
+&kp LSHFT,         &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,                   &kp N,     &kp M,             &kp PSCRN,         &kp INS,           &kp SLCK,       &kp PAUSE_BREAK, \
+&kp LCTRL,         &kp LGUI,          &kp LALT,          &none,             &kp SPACE,         &kp SPACE,               &kp SPACE, &kp RET,           &kp HOME,          &kp PG_DN,         &kp PG_UP,      &kp END 
 
 #define MIRYOKU_ALTERNATIVES_BASE_QWERTZ \
 &kp N1,            &kp N2,            &kp N3,            &kp N4,            &kp N5,            &kp MINUS,               &kp BSLH,                    &kp N6,           &kp N7,            &kp N8,            &kp N9,            &kp N0,    \

@@ -20,3 +20,15 @@ MIRYOKU_TAPDELAY_KP(CODE##EMPTY)
 MIRYOKU_TAPDELAY_LIST_BEHAVIORS
 
 #undef MIRYOKU_X
+
+// / {
+//    behaviors {
+//        u_gresc: MIRYOKU_grave_escape {
+//            compatible = "zmk, behavior-mod-morph";
+//            #binding-cells = <0>;
+//            bindings = <&kp ESC>, <&kp GRAVE>;
+//            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+//            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+//        }
+//    }
+//}
