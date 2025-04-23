@@ -152,7 +152,7 @@ U_LT(U_BUTTON, Z), U_MT(RALT, X),     &kp C,             &kp V,             &kp 
 &kp LALT,          &kp Z,             &kp X,             &kp C,             &kp V,             U_LT(U_MEDIA_FROW, B),   U_LT(U_FUN_FROW, N),     &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,     &kp BSLH, \
 &kp LCTRL,         &kp LGUI,          &kp DEL,           &kp TAB,           U_LT(U_MOUSE_FROW, ESC),U_LT(U_NAV_FROW, SPACE),      U_LT(U_NUM_FROW, RET),   U_LT(U_SYM_FROW, u_bspc_del),          &kp LEFT,          &kp DOWN,          &kp UP,        &kp RIGHT
 
-#define MIRYOKU_ALTERNATIVES_BASE_QWERTY_SIMPLE \
+#define MIRYOKU_ALTERNATIVES_BASE_QWERTY_SIMPLE_FROW \
 &u_to_U_ESC_BASE_FROW, &kp N1,        &kp N2,            &kp N3,            &kp N4,            &kp N5,                  &kp N6,    &kp N7,            &kp N8,            &kp N9,            &kp N0,        &u_bspc_del, \
 &kp TAB,           &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,                   &kp Y,     &kp U,             &kp I,             &kp O,             &kp P,         &kp BSLH,  \
 &kp CAPS,          &kp A,             &kp S,             &kp D,             &kp F,             &kp G,                   &kp H,     &kp J,             &kp K,             &kp L,             &kp SEMICOLON, &kp SQT,   \
