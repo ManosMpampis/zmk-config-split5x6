@@ -181,7 +181,7 @@
 };
 */
 
-
+/*
 / {
   keymap {
     compatible = "zmk,keymap";
@@ -194,66 +194,115 @@ MIRYOKU_LAYER_LIST
 #undef MIRYOKU_X
   };
 };
+*/
 
-
-/*
 / {
   keymap {
     compatible = "zmk,keymap";
-    BASE { \
-      display-name = "Base"; \
-      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_BASE, MIRYOKU_LAYER_BASE) >; \
+    BASE_FROW {
+      display-name = "Base";
+      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_BASE_FROW, MIRYOKU_LAYER_BASE_FROW) >;
     };
 
-    EXTRA { \
-      display-name = "Extra"; \
-      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_EXTRA, MIRYOKU_LAYER_EXTRA) >; \
+    EXTRA_FROW {
+      display-name = "Extra";
+      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_EXTRA_FROW, MIRYOKU_LAYER_EXTRA_FROW) >;
     };
 
-    GAME { \
-      display-name = "Game"; \
-      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_GAME, MIRYOKU_LAYER_GAME) >; \
+    TAP_FROW {
+      display-name = "Tap";
+      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_TAP_FROW, MIRYOKU_LAYER_TAP_FROW) >;
+    };
+
+    BUTTON_FROW {
+      display-name = "ButtonF";
+      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_BUTTON_FROW, MIRYOKU_LAYER_BUTTON_FROW) >;
+    };
+
+    NAV_FROW {
+      display-name = "NavF";
+      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_NAV_FROW, MIRYOKU_LAYER_NAV_FROW) >;
+    };
+
+    MOUSE_FROW {
+      display-name = "MouseF";
+      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_MOUSE_FROW, MIRYOKU_LAYER_MOUSE_FROW) >;
+    };
+
+    MEDIA_FROW {
+      display-name = "MediaF";
+      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_MEDIA_FROW, MIRYOKU_LAYER_MEDIA_FROW) >;
+    };
+
+    NUM_FROW {
+      display-name = "NumF";
+      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_NUM_FROW, MIRYOKU_LAYER_NUM_FROW) >;
+    };
+
+    SYM_FROW {
+      display-name = "SymF";
+      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_SYM_FROW, MIRYOKU_LAYER_SYM_FROW) >;
+    };
+
+    FUN_FROW {
+      display-name = "FunF";
+      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_FUN_FROW, MIRYOKU_LAYER_FUN_FROW) >;
+    };
+    
+    BASE {
+      display-name = "Base";
+      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_BASE, MIRYOKU_LAYER_BASE) >;
+    };
+
+    EXTRA {
+      display-name = "Extra";
+      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_EXTRA, MIRYOKU_LAYER_EXTRA) >;
     };
 
     TAP {
-      display-name = "Tap"; \
-      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_TAP, MIRYOKU_LAYER_TAP) >; \
+      display-name = "Tap";
+      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_TAP, MIRYOKU_LAYER_TAP) >;
     };
 
-    BUTTON { \
-      display-name = "Button"; \
-      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_BUTTON, MIRYOKU_LAYER_BUTTON) >; \
+    BUTTON {
+      display-name = "Button";
+      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_BUTTON, MIRYOKU_LAYER_BUTTON) >;
     };
 
-    NAV { \
-      display-name = "Nav"; \
-      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_NAV, MIRYOKU_LAYER_NAV) >; \
+    NAV {
+      display-name = "Nav";
+      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_NAV, MIRYOKU_LAYER_NAV) >;
     };
 
-    MOUSE { \
-      display-name = "Mouse"; \
-      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_MOUSE, MIRYOKU_LAYER_MOUSE) >; \
+    MOUSE {
+      display-name = "Mouse";
+      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_MOUSE, MIRYOKU_LAYER_MOUSE) >;
     };
 
-    MEDIA { \
-      display-name = "Media"; \
-      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_MEDIA, MIRYOKU_LAYER_MEDIA) >; \
+    MEDIA {
+      display-name = "Media";
+      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_MEDIA, MIRYOKU_LAYER_MEDIA) >;
     };
 
-    NUM { \
-      display-name = "Num"; \
-      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_NUM, MIRYOKU_LAYER_NUM) >; \
+    NUM {
+      display-name = "Num";
+      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_NUM, MIRYOKU_LAYER_NUM) >;
     };
 
-    SYM { \
-      display-name = "Sym"; \
-      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_SYM, MIRYOKU_LAYER_SYM) >; \
+    SYM {
+      display-name = "Sym";
+      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_SYM, MIRYOKU_LAYER_SYM) >;
     };
 
-    FUN { \
-      display-name = "Fun"; \
-      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_FUN, MIRYOKU_LAYER_FUN) >; \
+    FUN {
+      display-name = "Fun";
+      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_FUN, MIRYOKU_LAYER_FUN) >;
     };
+
+    GAME {
+      display-name = "Game";
+      bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_GAME, MIRYOKU_LAYER_GAME) >;
+    };
+
   };
 };
-*/
