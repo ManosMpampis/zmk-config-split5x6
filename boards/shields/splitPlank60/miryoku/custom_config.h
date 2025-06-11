@@ -5,8 +5,6 @@
 
 
 // #define MIRYOKU_CLIPBOARD_WIN
-#define MIRYOKU_KLUDGE_MOUSEKEYSPR
-
 #define MIRYOKU_KLUDGE_TAPDELAY
 
 //check if they work because of the split keyobard locality
