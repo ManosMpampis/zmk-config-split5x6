@@ -10,11 +10,8 @@
 
 #include "miryoku.h"
 
-#if defined (MIRYOKU_KLUDGE_MOUSEKEYSPR)
-  #include "miryoku_kludge_mousekeyspr.dtsi"
-#else
-  #include "miryoku_mousekeys.dtsi"
-#endif
+#include "miryoku_mousekeys.dtsi"
+#include <dt-bindings/zmk/pointing.h>
 
 / {
   keymap {

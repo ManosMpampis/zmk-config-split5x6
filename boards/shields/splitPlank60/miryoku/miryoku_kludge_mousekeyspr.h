@@ -15,8 +15,6 @@
 #define U_MOUSE_SCROLL_TIME 1000
 #define U_MOUSE_SCROLL_DELAY 0
 
-#include <dt-bindings/zmk/pointing.h>
-
 #define U_BTN1 &mkp MB1
 #define U_BTN2 &mkp MB2
 #define U_BTN3 &mkp MB3
